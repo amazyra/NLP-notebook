@@ -1,3 +1,0 @@
-[submodule "external_packages/mecab"]
-	path = external_packages/mecab
-	url = git@github.com:taku910/mecab.git

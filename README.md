@@ -1,5 +1,9 @@
 ## What's this?
-This repository is based on the Data Science Book and provides a kit to start experimenting with natural language processing in Japanese.
+このリポジトリでは、日本語自然言語処理の実験を簡単に始めるためのキットとサンプルを提供しています。
+
+This repository provides kits and samples to easily get started experimenting with natural language processing in Japanese, based on the Data Science Book.
+
+# is this repo
 
 ## Installed Python Packages
 - [JupyterNotebook](https://github.com/jupyter/jupyter) and [DatascienceNotebook](https://github.com/jupyter/docker-stacks)(base image)

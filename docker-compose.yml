@@ -1,13 +1,13 @@
 version: '3'
 services:
   notebook:
-    build: .
+    build: ./libraries
     environment: 
       - "TZ=Asia/Tokyo"
     volumes:
-      - ./data:/home/jovyan/data/
+      - ./experiments:/home/jovyan/data/
     ports:
-      - "8888:8888"
+      - "80:8888"
     networks:
       - default
 
