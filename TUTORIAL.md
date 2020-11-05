@@ -1,4 +1,4 @@
-### Requirements
+## Requirements
 This repository uses `docker` and `docker-compose` as the environment.  
 Please install based on the following references.
 
@@ -15,7 +15,7 @@ Please install based on the following references.
     - [Install Docker Desktop on Mac](https://docs.docker.com/docker-for-mac/install/)
     - [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
-### download repository
+## download repository
 Clone the repository to your PC.  
 このリポジトリをお手元のPCにクローンしてください。
 ```
@@ -27,7 +27,7 @@ Please work in this directory.
 リポジトリは、クローンを実行したディレクトリ内の`NLP-notebook-in-JAPANESE`フォルダにダウンロードされます。
 以降はこのディレクトリ内で作業を行ってください。
 
-### build docker image
+## build docker image
 Execute the following command. The execution environment will be set up on your PC.  
 以下のコマンドを実行してください。実行環境がお手元のPCで構築されます。  
 ```
@@ -52,7 +52,7 @@ If you see the JupyterNotebook logo, you've succeeded.
 
 JupyterNotebookのロゴが表示されると成功です。  
 
-### where is example notebooks?
+## where is example notebooks?
 ![Home](/wiki/home_page.PNG)
 
 - The `example_experiments` shown here are the `experiments/example_experiments/` in the repository. 
