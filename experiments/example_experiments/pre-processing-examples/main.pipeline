@@ -1,0 +1,432 @@
+{
+  "doc_type": "pipeline",
+  "version": "3.0",
+  "json_schema": "http://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
+  "id": "07357483-ba51-44c2-8254-7ee94184f8a3",
+  "primary_pipeline": "b2da7280-d95b-479a-9e0f-93033a2198c4",
+  "pipelines": [
+    {
+      "id": "b2da7280-d95b-479a-9e0f-93033a2198c4",
+      "nodes": [
+        {
+          "id": "3923c133-7c73-45e6-9070-ad8c5ccc2f1f",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "Pipeline_settings.ipynb",
+            "runtime_image": "",
+            "env_vars": [],
+            "include_subdirectories": false,
+            "ui_data": {
+              "label": "Pipeline_settings.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 143,
+              "y_pos": 286,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              }
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "c6b0cb69-2f57-4bb0-9389-c7716f3daab2",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "Cleaning.ipynb",
+            "runtime_image": "",
+            "env_vars": [],
+            "include_subdirectories": false,
+            "ui_data": {
+              "label": "Cleaning.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 411,
+              "y_pos": 288,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "014d8112-da05-43e3-b35c-70efc9f434f8",
+                  "node_id_ref": "3923c133-7c73-45e6-9070-ad8c5ccc2f1f",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "955c331f-9a1a-4018-849a-5dc3becd2a65",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "morphological analysis.ipynb",
+            "runtime_image": "",
+            "env_vars": [],
+            "include_subdirectories": false,
+            "ui_data": {
+              "label": "morphological analysis.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 668,
+              "y_pos": 289,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "d66db80e-e972-4d38-9c63-ee5341223d7d",
+                  "node_id_ref": "c6b0cb69-2f57-4bb0-9389-c7716f3daab2",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "70dce5a9-dcf8-40e9-8d44-d0daf563d363",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "Normalization.ipynb",
+            "runtime_image": "",
+            "env_vars": [],
+            "include_subdirectories": false,
+            "ui_data": {
+              "label": "Normalization.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 903,
+              "y_pos": 290,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "8cb7cc98-f4f2-42a0-a7ff-d82a49381e07",
+                  "node_id_ref": "955c331f-9a1a-4018-849a-5dc3becd2a65",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca211214-3c0d-45fd-b2cd-12aa99f17924",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "Remove StopWord.ipynb",
+            "runtime_image": "",
+            "env_vars": [],
+            "include_subdirectories": false,
+            "ui_data": {
+              "label": "Remove StopWord.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 1124,
+              "y_pos": 290,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "ce3056a5-93a7-4204-99d0-dda2662cbc90",
+                  "node_id_ref": "70dce5a9-dcf8-40e9-8d44-d0daf563d363",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "0fe6a363-560f-4968-8ce1-d06a52ed0b5c",
+          "type": "execution_node",
+          "op": "execute-notebook-node",
+          "app_data": {
+            "filename": "Output.ipynb",
+            "runtime_image": "",
+            "env_vars": [],
+            "include_subdirectories": false,
+            "ui_data": {
+              "label": "Output.ipynb",
+              "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20viewBox%3D%220%200%2022%2022%22%3E%0A%20%20%3Cg%20class%3D%22jp-icon-warn0%20jp-icon-selectable%22%20fill%3D%22%23EF6C00%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M18.7%203.3v15.4H3.3V3.3h15.4m1.5-1.5H1.8v18.3h18.3l.1-18.3z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%2016.5l-5.4-4.3-5.6%204.3v-11h11z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A",
+              "x_pos": 1341,
+              "y_pos": 291,
+              "description": "Notebook file"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "e7da1370-f5ca-40b8-8b2d-24edec0d59b0",
+                  "node_id_ref": "ca211214-3c0d-45fd-b2cd-12aa99f17924",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "app_data": {
+        "ui_data": {
+          "comments": [
+            {
+              "id": "839ac94b-e200-446c-a4c7-f3c503de1c01",
+              "x_pos": 107,
+              "y_pos": 190,
+              "width": 175,
+              "height": 52,
+              "class_name": "d3-comment-rect",
+              "content": "Pipelineで扱う対象のデータ、タイムスタンプ、ハッシュを指定します。",
+              "associated_id_refs": [
+                {
+                  "node_ref": "3923c133-7c73-45e6-9070-ad8c5ccc2f1f"
+                }
+              ]
+            },
+            {
+              "id": "bc50e7f2-4dc1-467d-9fe6-cceebf103605",
+              "x_pos": 348,
+              "y_pos": 191,
+              "width": 175,
+              "height": 52,
+              "class_name": "d3-comment-rect",
+              "content": "HTMLタグや、Javascriptといったノイズを排除します。",
+              "associated_id_refs": [
+                {
+                  "node_ref": "c6b0cb69-2f57-4bb0-9389-c7716f3daab2"
+                }
+              ]
+            },
+            {
+              "id": "96af48f8-278f-4434-b293-2ad07be7b1a0",
+              "x_pos": 637,
+              "y_pos": 191,
+              "width": 175,
+              "height": 42,
+              "class_name": "d3-comment-rect",
+              "content": "形態素解析を行います。",
+              "associated_id_refs": [
+                {
+                  "node_ref": "955c331f-9a1a-4018-849a-5dc3becd2a65"
+                }
+              ]
+            },
+            {
+              "id": "4fba93cc-f2e3-4262-8b75-df8e5860eaf7",
+              "x_pos": 113,
+              "y_pos": 371,
+              "width": 175,
+              "height": 42,
+              "class_name": "d3-comment-rect",
+              "content": "入力ファイル形式: .csv\n設定ファイル: pipeline.json",
+              "associated_id_refs": [
+                {
+                  "node_ref": "3923c133-7c73-45e6-9070-ad8c5ccc2f1f"
+                }
+              ]
+            },
+            {
+              "id": "a0b689b7-6440-4893-b59b-1d7f24caff61",
+              "x_pos": 897,
+              "y_pos": 196,
+              "width": 175,
+              "height": 42,
+              "class_name": "d3-comment-rect",
+              "content": "各単語の正規化を行います。",
+              "associated_id_refs": [
+                {
+                  "node_ref": "70dce5a9-dcf8-40e9-8d44-d0daf563d363"
+                }
+              ]
+            },
+            {
+              "id": "f773bb03-0bcc-4e6f-ba91-7ddccf5d8ce6",
+              "x_pos": 1103,
+              "y_pos": 193,
+              "width": 175,
+              "height": 42,
+              "class_name": "d3-comment-rect",
+              "content": "ストップワードの除去を行います。",
+              "associated_id_refs": [
+                {
+                  "node_ref": "ca211214-3c0d-45fd-b2cd-12aa99f17924"
+                }
+              ]
+            },
+            {
+              "id": "f2fc626f-f11d-4576-b8bc-e292bbac3b38",
+              "x_pos": 1325,
+              "y_pos": 196,
+              "width": 175,
+              "height": 42,
+              "class_name": "d3-comment-rect",
+              "content": "ファイルを出力します。",
+              "associated_id_refs": [
+                {
+                  "node_ref": "0fe6a363-560f-4968-8ce1-d06a52ed0b5c"
+                }
+              ]
+            }
+          ]
+        },
+        "version": 3
+      },
+      "runtime_ref": ""
+    }
+  ],
+  "schemas": []
+}
