@@ -16,7 +16,7 @@ This repository uses `docker` and `docker-compose` as the environment.
 このリポジトリでは、環境として`git`, `docker`および`docker-compose`を利用しています。  
 
 ## How to Use
-We've prepared a [tutorial](TUTORIAL.md) for you.
+We've prepared a [tutorial](TUTORIAL.md) for you.  
 [チュートリアル](TUTORIAL.md)を用意したので御覧ください.  
 
 ## Directories
