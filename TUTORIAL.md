@@ -45,12 +45,9 @@ notebook_1  |      or http://127.0.0.1:8888/?token=*****************************
 ```
 
 After the build is complete, go to `http://127.0.0.1:8888/?token=************************************************`.  
-If you see the JupyterNotebook logo, you've succeeded.  
   
 構築が完了した後、表示された行に書かれているURL
 `http://127.0.0.1:8888/?token=************************************************`にアクセスしてください。  
-
-JupyterNotebookのロゴが表示されると成功です。  
 
 ## where is example notebooks?
 ![Home](/wiki/home_page.PNG)
