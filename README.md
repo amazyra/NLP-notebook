@@ -16,10 +16,14 @@ This repository uses `docker` and `docker-compose` as the environment.
 このリポジトリでは、環境として`git`, `docker`および`docker-compose`を利用しています。  
 
 ## How to Use
-[チュートリアル](TUTORIAL.md)を用意したので御覧ください  
 We've prepared a [tutorial](TUTORIAL.md) for you.
+[チュートリアル](TUTORIAL.md)を用意したので御覧ください.  
 
-## Directory
+## Directories
+- `experiments/example_experiments/` ...... Sample code for natural language processing is located here.
+- `experiments/your_experiments/` ...... A place for users to manage their own code.
+- `libraries/` ...... Libraries for natural language processing and settings for building them.
+- `wiki` ....... Stores the files associated with README.md.
 
 - `experiments/example_experiments/` ...... 自然言語処理に関するサンプルコードが配置されています。
 - `experiments/your_experiments/` ...... ユーザーが自分で作ったコードを管理するための場所です。
