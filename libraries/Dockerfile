@@ -1,6 +1,7 @@
 FROM jupyter/datascience-notebook
 # Setting jupyter notebook environment.
 RUN rmdir work
+ARG password=not_password
 
 # install libraries
 ENV GRANT_SUDO=yes
