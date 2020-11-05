@@ -20,25 +20,13 @@ RUN apt-get update && apt-get install -y\
     mecab-ipadic-utf8\
     libmecab-dev
 
-
-## install poetry
-RUN pip install --upgrade pip && pip install\
-    poetry==1.1.4\
-    pyparsing==2.4.7\
-    certifi==2020.6.20
-
-RUN poetry config virtualenvs.create false
-
-## install python library
-RUN pip3 install MeCab
-
 ## install elyra
 RUN conda install -c conda-forge elyra
 RUN jupyter lab build --dev-build=False --minimize=False
 
 # install libraries
-ENV GRANT_SUDO=no
-USER jovyan
+# ENV GRANT_SUDO=no
+# USER jovyan
 
 ### Set Environment
 ENV MECAB_PATH /usr/local/lib/libmecab.so
@@ -46,5 +34,13 @@ ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP.UTF-8
 ENV LC_ALL ja_JP.UTF-8
 
+## install python library
+RUN pip3 install\
+    MeCab==0.996.2\
+    stanfordcorenlp==3.9.1.1\
+    nltk==3.5 
+
+
 # jupyter config
 COPY ./settings/jupyter_notebook_config.py .jupyter/
+

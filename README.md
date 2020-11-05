@@ -29,3 +29,17 @@ We've prepared a [tutorial](TUTORIAL.md) for you.
 - `experiments/your_experiments/` ...... ユーザーが自分で作ったコードを管理するための場所です。
 - `libraries/` ...... 自然言語処理に必要なライブラリとそのビルドについての設定が書かれています。
 - `wiki` ....... README.mdに付随するファイルを保管しています。
+
+# Adding a Library
+If you want to install the library permanently, add it to the `libraries/Dockerfile` directory.
+
+ライブラリを永続的にインストールする場合、`libraries/Dockerfile`にインストールするライブラリを追加してください。
+
+```
+## install python library
+RUN pip3 install\
+    MeCab==0.996.2\
+    stanfordcorenlp==3.9.1.1\
+    nltk==3.5\
+    new_package==0.0 # Add library with version here like this.
+```
