@@ -52,10 +52,10 @@ After the build is complete, go to `http://127.0.0.1:8888/?token=***************
 ## where is example notebooks?
 ![Home](/wiki/home_page.PNG)
 
-- The `example_experiments` shown here are the `experiments/example_experiments/` in the repository. 
-- ここに表示されている`example_experiments`はリポジトリでの`./experiments/example_experiments/`とシェアされています。
- 
-- See `README.md` in each folder in `example_experiments` for instructions
-- 使い方は`example_experiments`内にある各フォルダの`README.md`を御覧ください
+The `example_experiments` shown here are the `experiments/example_experiments/` in the repository. 
+ここに表示されている`example_experiments`はリポジトリでの`./experiments/example_experiments/`とシェアされています。
+   
+See `README.md` in each folder in `example_experiments` for instructions
+使い方は`example_experiments`内にある各フォルダの`README.md`を御覧ください
 
 [<< Back to README](/README.md)
