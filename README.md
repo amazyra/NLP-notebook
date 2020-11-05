@@ -33,12 +33,14 @@ git clone git@github.com:amazyra/NLP-notebook-in-JAPANESE.git
 ```
 The repository will be downloaded to the `NLP-notebook-in-JAPANESE` folder in the directory where the clone was executed.
 Please work in this directory.  
+  
 リポジトリは、クローンを実行したディレクトリ内の`NLP-notebook-in-JAPANESE`フォルダにダウンロードされます。
 以降はこのディレクトリ内で作業を行ってください。
 
 ### password settings
 JupyterNotebook has a password to prevent unauthorized access.  
-You can set a hashed password on line 286 of `./libraries/settings/jupyter_notebook_config.py`  
+You can set a hashed password on line 286 of `./libraries/settings/jupyter_notebook_config.py`.  
+  
 JupyterNotebookでは、不正アクセス防止のためパスワードが設定されています。  
 `./libraries/settings/jupyter_notebook_config.py`の286行目でハッシュ化したパスワードを設定できます。  
 
@@ -73,7 +75,7 @@ docker-compose up
 After the build is complete, go to `http://localhost:80`.  
 If you see the JupyterNotebook logo, you've succeeded.  
 Login with the password you set up as set above.  
-
+  
 構築が完了した後、`http://localhost:80`にアクセスしてください。  
 JupyterNotebookのロゴが表示されると成功です。  
 先程設定したパスワードで、ログインしてください。  
