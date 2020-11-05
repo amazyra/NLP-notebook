@@ -1,6 +1,5 @@
 FROM jupyter/datascience-notebook
 # Setting jupyter notebook environment.
-COPY ./settings/jupyter_notebook_config.py .jupyter/
 RUN rmdir work
 
 # install libraries
@@ -45,3 +44,6 @@ ENV MECAB_PATH /usr/local/lib/libmecab.so
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP.UTF-8
 ENV LC_ALL ja_JP.UTF-8
+
+# jupyter config
+COPY ./settings/jupyter_notebook_config.py .jupyter/
