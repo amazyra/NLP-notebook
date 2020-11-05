@@ -1,6 +1,6 @@
 ## What's this?
-This repository provides kits and samples to easily get started experimenting with natural language processing in Japanese, based on the Data Science Book.
-このリポジトリでは、日本語自然言語処理の実験を簡単に始めるためのキットとサンプルを提供しています。
+This repository provides kits and samples to easily get started experimenting with natural language processing in Japanese, based on the Data Science Book.  
+このリポジトリでは、日本語自然言語処理の実験を簡単に始めるためのキットとサンプルを提供しています。  
 
 ## Requirements
 This repository uses `docker` and `docker-compose` as the environment.  
@@ -26,20 +26,20 @@ Please install based on the following references.
     - [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 ### download repository
-Clone the repository to your PC.
+Clone the repository to your PC.  
 このリポジトリをお手元のPCにクローンしてください。
 ```
 git clone git@github.com:amazyra/NLP-notebook-in-JAPANESE.git
 ```
 The repository will be downloaded to the `NLP-notebook-in-JAPANESE` folder in the directory where the clone was executed.
-Please work in this directory.
+Please work in this directory.  
 リポジトリは、クローンを実行したディレクトリ内の`NLP-notebook-in-JAPANESE`フォルダにダウンロードされます。
 以降はこのディレクトリ内で作業を行ってください。
 
 ### password settings
-JupyterNotebook has a password to prevent unauthorized access.
-You can set a hashed password on line 286 of `./libraries/settings/jupyter_notebook_config.py`
-JupyterNotebookでは、不正アクセス防止のためパスワードが設定されています。
+JupyterNotebook has a password to prevent unauthorized access.  
+You can set a hashed password on line 286 of `./libraries/settings/jupyter_notebook_config.py`  
+JupyterNotebookでは、不正アクセス防止のためパスワードが設定されています。  
 `./libraries/settings/jupyter_notebook_config.py`の286行目でハッシュ化したパスワードを設定できます。  
 
 ```python
@@ -72,7 +72,8 @@ docker-compose up
 
 After the build is complete, go to `http://localhost:80`.  
 If you see the JupyterNotebook logo, you've succeeded.  
-Login with the password you set up earlier.  
+Login with the password you set up as set above.  
+
 構築が完了した後、`http://localhost:80`にアクセスしてください。  
 JupyterNotebookのロゴが表示されると成功です。  
 先程設定したパスワードで、ログインしてください。  
