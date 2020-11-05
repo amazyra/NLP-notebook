@@ -18,3 +18,10 @@ This repository uses `docker` and `docker-compose` as the environment.
 ## How to Use
 [チュートリアル](TUTORIAL.md)を用意したので御覧ください  
 We've prepared a [tutorial](TUTORIAL.md) for you.
+
+## Directory
+
+- `experiments/example_experiments/` ...... 自然言語処理に関するサンプルコードが配置されています。
+- `experiments/your_experiments/` ...... ユーザーが自分で作ったコードを管理するための場所です。
+- `libraries/` ...... 自然言語処理に必要なライブラリとそのビルドについての設定が書かれています。
+- `wiki` ....... README.mdに付随するファイルを保管しています。
